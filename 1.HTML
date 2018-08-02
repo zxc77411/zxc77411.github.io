@@ -1,0 +1,848 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <style>
+        .logo {
+            height: 80px;
+            transition: 0.5s;
+        }
+
+        .logo.active {
+            height: 50px;
+        }
+
+        .navbar-dark.active {
+            background-color: rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5)
+        }
+
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: #FFFF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #FFFF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .canada {
+            position: absolute;
+            top: 125%;
+            left: 30%;
+
+        }
+
+        .bg1 {
+            display: block;
+            margin: auto;
+            position: relative;
+            padding: 20px;
+        }
+
+
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            color: #16181b;
+            text-decoration: none;
+            background-color: black
+        }
+
+
+
+        .swiper-slide {
+
+            padding-bottom: 150px;
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+        footer {
+            padding: 10px 0;
+            font-size: 12px;
+            text-align: center;
+            background-color: #343a40;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo top1" src="img/LOGO.png" height="100px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link top1" href="#">首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">歷史</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(0, 0, 0, 0.5); box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5) ">
+                            <a class="dropdown-item" id="Humanities1" href="#" style="color: #FFFF;">人文地理</a>
+                            <a class="dropdown-item" id="climate1" href="#" style="color: #FFFF;"> 氣候變化</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            生態資源
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(0, 0, 0, 0.5); box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5) ">
+                            <a class="dropdown-item" id="land1" href="#" style="color: #FFFF;">陸地生態</a>
+                            <a class="dropdown-item" id="land3" href="#" style="color: #FFFF;"> 海洋生態</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" id="land5" href="#">全球暖化</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頭 -->
+
+    <div class="se1" id="top2" style="height:100% ;background-image: url('https://www.climate.gov/sites/default/files/Arctic_seaicemin_2017_HD1920x1080.gif'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+        <div class="container-fluid">
+
+
+            <div class="cover">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="se2" id="Humanities2" style="background-image: url('http://www.missyuan.com/siyuan/day_061209/12_SC22Vx0jL5Jb.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+        <div class="row justify-content-center" style="color: #FFFF;padding:10px; border-bottom-style:solid;">
+            <H2>北極人文地理介紹 </H2>
+
+
+        </div>
+        <div class="container-fluid">
+            <img class="bg1 " src="img/123.png" width="100%" height="100%" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- section2 卡片輪播-->
+    <div class="se3" id="climate2" style="width:100% ; height:100% ; background-image: url('http://image5.tuku.cn/wallpaper/Landscape%20Wallpapers/9777_2560x1600.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;padding:0 10px ;">
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="color: #FFFF;padding:10px; border-bottom-style:solid;">
+                <H2>北極氣候介紹</H2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="text-center" style="color: #FFFF;padding:10px ;">冬天</h3>
+                    <div class="swiper-container" id="swipercontainer">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div id="card1">
+                                    <div class="front">
+                                        <img src="img/北及冬天.jpg" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <img src="img/TEXT/1.png" width="100%" alt="" style="padding:50px ;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card3">
+                                    <div class="front">
+                                        <img src="img/北極冬天.jpg" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                            <img src="img/TEXT/1.png" width="100%" alt="" style="padding:50px ;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card5">
+                                    <div class="front">
+                                        <img src="img/北極冬天01.jpg" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                            <img src="img/TEXT/1.png" width="100%" alt="" style="padding:50px ;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-center" style="color: #FFFF;padding:10px ;">夏天</h3>
+                    <div class="swiper-container" id="swipercontainer1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div id="card2">
+                                    <div class="front">
+                                        <img src="img/北極夏天.png" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <img src="img/TEXT/2.png" width="100%" alt="" style="padding:50px ;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card4">
+                                    <div class="front">
+                                        <img src="img/北極夏天01.jpg" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                            <img src="img/TEXT/2.png" width="100%" alt="" style="padding:50px ;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card6">
+                                    <div class="front">
+                                        <img src="img/北極夏天02.jpg" height="100%" width="100%" alt="">
+                                    </div>
+                                    <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                        <div class="back" style="background-color: rgba(0, 0, 0, 0.3);color: #FFFF;">
+                                            <img src="img/TEXT/2.png" width="100%" alt="" style="padding:50px ;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="se4" id="land2" style="width:100% ;height:100% ; background-image: url('https://p2-q.mafengwo.net/s10/M00/BE/3D/wKgBZ1oJplGAdfAdADUROdckGjE86.jpeg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="color: #FFFF;padding:50px; border-bottom-style:solid;">
+                <h2>北極圈陸地動植物介紹</h2>
+            </div>
+            <div class="row" style="height:45vh ;padding:20px 0 ;">
+                <div class="col-12 col-sm-3">
+                    <div id="card7">
+                        <div class="front">
+                            <img src="img/動物/北極兔.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/兔.png" width=100% alt="" style="background-color:white ;padding:39px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card8">
+                        <div class="front">
+                            <img src="img/動物/馴鹿.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/鹿.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card9">
+                        <div class="front">
+                            <img src="img/動物/麝牛.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/牛.png" width=100% alt="" style="background-color: white ;padding:35px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card10">
+                        <div class="front">
+                            <img src="img/動物/泰加林.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/泰.png" width=100% alt="" style="background-color: white ;padding:60px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="height:45vh ;padding:20px 0 ;">
+                <div class="col-12 col-sm-3">
+                    <div id="card11">
+                        <div class="front">
+                            <img src="img/動物/北極旅鼠123.png" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/鼠.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card12">
+                        <div class="front">
+                            <img src="img/動物/北極狐.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/狐.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card13">
+                        <div class="front">
+                            <img src="img/動物/北極狼.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/狼.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card14">
+                        <div class="front">
+                            <img src="img/動物/苔原草地.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/苔.png" width=100% alt="" style="background-color: white ;padding:60px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="se5" id="land4"  style="height:100% ;width:100% ; background-image: url(' http://image.cc0.cn/uploadfile/2017/0525/20170525024344793.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="color: #FFFF;padding:50px; border-bottom-style:solid;">
+                <h2>北極圈海洋動物及鳥類介紹</h2>
+            </div>
+            <div class="row " style="height:45vh ;padding:10px ;">
+                <div class="col-12 col-sm-3">
+                    <div id="card15">
+                        <div class="front">
+                            <img src="img/動物/燕鷗.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/鴨.png" width=100% alt="" style="background-color: white ;padding:35px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card16">
+                        <div class="front">
+                            <img src="img/動物/歐絨鴨.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/鷗.png" width=100% alt="" style="background-color: white ;padding:27px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card17">
+                        <div class="front">
+                            <img src="img/動物/雪鴞.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/雪.png" width=100% alt="" style="background-color: white ;padding:20px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card18">
+                        <div class="front">
+                            <img src="img/動物/北極熊.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/熊.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="row " style="height:45vh ;padding:20px 0 ;">
+                <div class="col-12 col-sm-3">
+                    <div id="card19">
+                        <div class="front">
+                            <img src="img/動物/獨角鯨.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/獨角.png" width=100% alt="" style="background-color: white ;padding:23px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card20">
+                        <div class="front">
+                            <img src="img/動物/白鯨.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/白鯨.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card21">
+                        <div class="front">
+                            <img src="img/動物/海牛.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/海牛.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div id="card22">
+                        <div class="front">
+                            <img src="img/動物/海豹.jpg" width="100%" alt="" style="border-radius:10px;">
+                        </div>
+                        <div class="back">
+                            <img src="img/TEXT/海豹.png" width=100% alt="" style="background-color: white ;padding:30px 10 ;border-radius:10px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="se6" id="land6" style="background-image: url('https://images.alphacoders.com/457/457016.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+        <div class="container">
+            <div class="row justify-content-center" style="color: #FFFF;padding:10px; border-bottom-style:solid;">
+                <h2>全球暖化</h2>
+            </div>
+            <div class="row justify-content-around" style="padding:50px ">
+                <div class="col-sm-6">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/全球暖化/北極暖化前後對比1.png" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/全球暖化/北極暖化前後對比2.png" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/全球暖化/北極暖化前後對比3.png" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/全球暖化/北極暖化前後對比5.png" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/全球暖化/北極暖化前後對比6.png" width="100%" height="100%" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/TX1-01.png" width="100%" height="84.5%" alt="" style="background-color: rgba(255, 255, 255, 0.432);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="rol">
+                <img src="img/TEXT/未命名-1.png" width="100%">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+        crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+        });
+
+
+        //scroll事件 LOGO
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            console.log("scrollTop:" + scrollTop);
+
+            if (scrollTop > 700) {
+                //如果scrollTop超過200
+                $(".logo").addClass("active");
+            } else {
+                //否則
+                $(".logo").removeClass("active");
+            }
+
+        });
+
+        //scroll事件 NAV
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            console.log("scrollTop:" + scrollTop);
+
+            if (scrollTop > 800) {
+                //如果scrollTop超過200
+                $(".navbar-dark").addClass("active");
+            } else {
+                //否則
+                $(".navbar-dark").removeClass("active");
+            }
+
+        });
+
+
+
+
+
+        //Card輪播
+        var swiper = new Swiper('#swipercontainer', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+        });
+        var swiper1 = new Swiper('#swipercontainer1', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+        });
+        $("#card1").flip({
+            reverse: true
+        });
+
+        $("#card2").flip({
+            reverse: false
+        });
+
+        $("#card3").flip({
+            reverse: true
+        });
+
+        $("#card4").flip({
+            reverse: false
+        });
+        $("#card5").flip({
+            reverse: true
+        });
+        $("#card6").flip({
+            reverse: false
+        });
+
+
+
+
+
+
+        $("#card7").flip({
+            reverse: true
+        });
+
+
+        $("#card8").flip({
+            reverse: false
+        });
+
+        $("#card9").flip({
+            reverse: true
+        });
+
+        $("#card10").flip({
+            reverse: false
+        });
+
+        $("#card11").flip({
+            reverse: true
+        });
+
+        $("#card12").flip({
+            reverse: false
+        });
+
+        $("#card13").flip({
+            reverse: true
+        });
+
+        $("#card14").flip({
+            reverse: false
+        });
+
+
+
+        $("#card15").flip({
+            reverse: false
+        });
+
+        $("#card16").flip({
+            reverse: true
+        });
+
+        $("#card17").flip({
+            reverse: false
+        });
+
+        $("#card18").flip({
+            reverse: true
+        });
+
+        $("#card19").flip({
+            reverse: false
+        });
+
+        $("#card20").flip({
+            reverse: true
+        });
+
+        $("#card21").flip({
+            reverse: false
+        });
+        $("#card22").flip({
+            reverse: false
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $(function () {
+            $(".top1").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#top2").offset().top
+                }, "show");
+                return false;
+            });
+        });
+        $(function () {
+            $("#climate1").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#climate2").offset().top
+                }, "show");
+                return false;
+            });
+        });
+
+        $(function () {
+            $("#Humanities1").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#Humanities2").offset().top
+                }, "show");
+                return false;
+            });
+        });
+
+        $(function () {
+            $("#land1").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#land2").offset().top
+                }, "show");
+                return false;
+            });
+        });
+
+        $(function () {
+            $("#land3").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#land4").offset().top
+                }, "show");
+                return false;
+            });
+        });
+
+        $(function () {
+            $("#land5").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#land6").offset().top
+                }, "show");
+                return false;
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
